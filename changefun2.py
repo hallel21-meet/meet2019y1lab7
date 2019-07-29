@@ -2,10 +2,10 @@ import turtle
 turtle.goto(0,0)
 UP=0
 DOWN=1
-RIGHT=2
-LEFT=3
-
+LEFT=2
+RIGHT=3
 direction = UP
+
 
 def up():
     global direction
@@ -41,9 +41,9 @@ def on_move():
         turtle.goto(x, y+50)
     elif direction == DOWN:
         turtle.goto(x, y-50)
-    elif direction == "Left":
+    elif direction == LEFT:
         turtle.goto(x-50, y)
-    elif direction == "Right":
+    elif direction == RIGHT:
         turtle.goto(x+50, y)
 
 
